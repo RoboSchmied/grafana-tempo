@@ -81,7 +81,7 @@ func SpanIDAndKindToToken(id []byte, kind int) uint64 {
 
 // SpanIDToUint64 converts a span ID into an uint64 representation. This is useful when using a span ID as key
 // in a map. If the ID is longer than 8 bytes, the bytes at larger positions are discarded. The function does
-// not make any guarantees about the endianess or ordering of converted IDs.
+// not make any guarantees about the endianness or ordering of converted IDs.
 //
 // Note: span IDs are not always unique within a trace (e.g. zipkin traces) SpanIDAndKindToToken could be more
 // appropriate in some cases.
